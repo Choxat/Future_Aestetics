@@ -1,0 +1,23 @@
+.category{
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+    height: auto;
+    align-items: stretch;
+    gap: 0.1rem;
+}
+
+.item{
+    height:10rem;
+    width: 12rem;
+    flex-grow: 1;
+    flex-basis: auto;
+    display: flex;
+    background-color: rgba(0, 238, 255, 0.267);
+
+}
+.item:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}

@@ -1,0 +1,15 @@
+.footerbot{
+    display: grid;
+    background-color: rgb(26, 24, 24);
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    height: 20rem;
+}
+
+
+@media  (max-width: 800px){
+    .footer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    }
+}
