@@ -7,7 +7,7 @@ $Col_5th: #d4a373;
 
 #banner{
   padding: 0px;
-  background-color: black;
+  background-color: rgb(13, 10, 10);
   display: flex;
   width: 100%;
   gap: 2%;
@@ -24,31 +24,37 @@ $Col_5th: #d4a373;
   align-items: center;
   margin: auto;
   gap:1rem;
-
+ 
 }
 .navigation ul{
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   grid-column: 3;
+
+ 
   
 }
 .navigation ul li a{
   color: $Col_5th;
-  text-decoration: none;
-  
+}
+.logo{
+  border-radius: 1rem;
+  background-color: #fefae0;
+  width: 100%;
+  height: 100%;
+}
+.logo:hover{
+  background-color: rgba(0, 0, 0, 0.422);
 }
 
 
 @media  (max-width: 600px){
-  
- .navigation{
-  grid-template-columns: 1fr ;
-  grid-template-rows: 1fr 1fr ;
-
- }
- .navigation ul{
-  
-  grid-column: 1;
- }
+// .navigation{
+//  grid-template-columns: 1fr ;
+//  grid-template-rows: 1fr 1fr ;
+//  }
+// .navigation ul{
+//  position: fixed; 
+ // }
 };

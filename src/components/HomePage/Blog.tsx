@@ -1,5 +1,6 @@
-import '../styles/Blog.scss'
+import '../../styles/HomePage/Blog.scss'
 import image from '../../public/39312.jpg'
+
 const Blog = () => {
     return ( 
     <article className='blog'>

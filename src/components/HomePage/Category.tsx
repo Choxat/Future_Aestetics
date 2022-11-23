@@ -1,4 +1,4 @@
-import '../styles/Category.scss';
+import '../../styles/HomePage/Category.scss';
 
 const Category = () => {
     return ( 

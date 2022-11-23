@@ -1,9 +1,11 @@
-import { useState } from 'react'
-
 import './App.scss'
 import Header from '../src/components/Header'
-import Home from './components/Home'
+import Home from './components/HomePage/Home'
 import Footer from './components/Footer'
+import Market from './components/Market/Market'
+import { Outlet } from 'react-router-dom'
+
+
 
 function App() {
  
@@ -13,10 +15,10 @@ function App() {
     <div className="App" >
 
     <Header/>
+    
+    <Outlet />
       
-    <Home/>
-      
-      <Footer/>
+    <Footer/>
     </div>
   
   )

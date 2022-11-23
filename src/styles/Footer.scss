@@ -4,6 +4,7 @@
     align-items: flex-start;
     grid-template-columns: 1fr 1fr;
     height: 20rem;
+   
 }
 
 
@@ -11,5 +12,6 @@
     .footer{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr ;
+    display: flex;
     }
 }

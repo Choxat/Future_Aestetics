@@ -1,0 +1,12 @@
+.product-list{
+    background-color: rgba(250, 156, 14, 0.522);
+    display: flex;
+   
+    flex-wrap: wrap;
+}   
+.product-preview{
+    flex: 1;
+    margin: auto;
+    min-width: 7rem;
+    background-color: azure;
+}
