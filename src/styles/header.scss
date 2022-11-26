@@ -4,57 +4,96 @@ $Col_3rd: #fefae0;
 $Col_4th: #faedcd;
 $Col_5th: #d4a373;
 
-
+/********************** black banner topside ***************************/
 #banner{
-  padding: 0px;
   background-color: rgb(13, 10, 10);
   display: flex;
-  width: 100%;
-  gap: 2%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  
 }
-
+/********************** Navigation bar top ***************************/
 .navigation{
-  
-  display: grid;
-  grid-template-columns: 6fr 6fr 6fr;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: auto;
-  gap:1rem;
- 
-}
-.navigation ul{
   display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  grid-column: 3;
+  position: relative;
+  justify-content: space-between;
+  background-color: #4c64ec9c;
+  align-items: center;
+  transition: 1s;
 
- 
-  
+  }
+  .navigation .active{
+    position: fixed;
+    width: 100%;
+    
+  }
+    .navigation ul{
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+      
+    }
+    .navigation ul li{
+     font-size: 1.5rem;
+     transition: 0.5s ease-in-out;
+     cursor: pointer;
+     
+    }
+    .logo:hover{
+      background-color: rgba(0, 0, 0, 0.422);
+    }
+/************************************* H A M B U R G E R - M E N U ***********/
+    .ham-menu:hover{
+    color: brown;
+      scale: 1.5;
+      
+    }
+    .hamburger{
+      transition: 0.5s ease-in-out;
+      position: fixed;
+      background-color: $Col_base;
+      width: 0%;
+      overflow:hidden;
+      list-style: none;
+    }
+    .hamburger-open{
+     
+      transition: 0.5s ease-in-out;
+      position: fixed;
+      width: 100%;
+      background-color: $Col_4th;
+      overflow:hidden;
+    }
+/************************************* S H O P - C A R T - M E N U ***********/
+.shop-menu:hover{
+  color: brown;
+      scale: 1.5;
 }
-.navigation ul li a{
-  color: $Col_5th;
+.shop-cart{
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  width: 0%;
+  overflow:hidden;
 }
-.logo{
-  border-radius: 1rem;
-  background-color: #fefae0;
+.shop-cart-open{
+  transition: 0.5s ease-in-out;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  overflow:hidden;
 }
-.logo:hover{
-  background-color: rgba(0, 0, 0, 0.422);
+/************************************* S E A R C H - M E N U ***********/
+.search:hover{
+  
+  color: brown;
+      scale: 1.5;
 }
 
+.search-input{
+ 
+  display: none;
 
-@media  (max-width: 600px){
-// .navigation{
-//  grid-template-columns: 1fr ;
-//  grid-template-rows: 1fr 1fr ;
-//  }
-// .navigation ul{
-//  position: fixed; 
- // }
-};
+
+ ;
+}
+.search-input-open{
+  display: absolute;
+
+
+}
